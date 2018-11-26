@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseConfig>
+	<resources>
+		<resource type="jdbc" encrypt="false">
+			<driver>oracle.jdbc.driver.OracleDriver</driver>
+			<url>jdbc:oracle:thin:@//192.168.56.101:1521/orcl</url>
+			<user>scott</user>
+			<password>scott</password>
+		</resource>
+	</resources>
+	<resources>
+		<resource type="jdbc" encrypt="false">
+			<driver>oracle.jdbc.driver.OracleDriver</driver>
+			<url>jdbc:oracle:thin:@//192.168.56.101:1521/orcl</url>
+			<user>scott</user>
+			<password>scott</password>
+		</resource>
+	</resources>
+</databaseConfig>
