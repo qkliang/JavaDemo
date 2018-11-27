@@ -5,12 +5,14 @@ import java.sql.DriverManager;
 
 public class DataBaseUtils {
 	private Connection conn = null;
-//	public Connection getDBConnection() {
-//		try {
-//			Class.forName("");
-//			conn = DriverManager.getConnection(url,user,pass);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//	}
+	MyXMLReader mxr = new MyXMLReader();
+	public Connection getDBConnection() {
+		try {
+			Class.forName(mxr.getORACLEDRIVER());
+			conn = DriverManager.getConnection(mxr.getURL(),mxr.getUSER(),mxr.getPASSWORD());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return conn;
+	}
 }
